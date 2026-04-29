@@ -1,0 +1,114 @@
+@import "./sentient.css";
+@import "./switzer.css";
+
+* {
+  --background-color: #fff9f0;
+  --body-text-color: #5c0000;
+  --subtle: rgb(92, 0, 0, 0.1);
+  --headline-color: #320303;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  text-align: center;
+  max-width: 680px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  font-family: "Sentient-Regular";
+}
+
+h1,
+h2,
+h3 {
+  margin: 1rem;
+  font-family: "Switzer-Semibold";
+  color: var(--headline-color);
+}
+
+hr {
+  margin: 1.5rem auto;
+  border: none;
+  border-top: 2px solid var(--subtle);
+  background-color: var(--background-color);
+  height: 1px;
+  width: 50%;
+  align-content: center;
+}
+
+p b {
+  font-family: "Sentient-Bold";
+}
+
+ul {
+  list-style-type: none;
+  color: var(--body-text-color);
+  padding-inline-start: 0px;
+}
+ul b {
+  font-family: "Sentient-Bold";
+}
+
+.guest-subgroup h3 {
+  font-family: "Switzer-Medium";
+  font-size: 1.125rem;
+  margin-bottom: 0;
+}
+
+p {
+  color: var(--body-text-color);
+}
+
+.guest-subgroup {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.guest-subgroup ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 0.5rem;
+  align-self: stretch;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0.5rem;
+}
+
+.guest-subgroup ul li {
+  color: var(--body-text-color);
+  display: flex;
+  padding: 0.25rem 0.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 2rem;
+  border: 1px solid var(--body-text-color);
+}
+
+#lea-bottom {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 180px;
+}
+
+#map {
+  max-width: 100%;
+}
+
+@media (max-width: 720px) {
+  body {
+    margin-bottom: 180px;
+  }
+  #map {
+    height: 240px;
+  }
+  iframe {
+    width: 100% !important;
+  }
+}
