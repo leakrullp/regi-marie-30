@@ -4,8 +4,8 @@
 @import "./pally.css";
 
 * {
-  --background-color: #f1dada;
-  --body-text-color: #270000;
+  --background-color: #f8d8f6;
+  --body-text-color: #260027;
   --subtle: rgb(92, 0, 0, 0.1);
   --headline-color: #af167a;
   box-sizing: border-box;
