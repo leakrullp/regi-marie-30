@@ -1,11 +1,13 @@
 @import "./sentient.css";
 @import "./switzer.css";
+@import "./dancing-script.css";
+@import "./pally.css";
 
 * {
-  --background-color: #fff9f0;
-  --body-text-color: #5c0000;
+  --background-color: #f1dada;
+  --body-text-color: #270000;
   --subtle: rgb(92, 0, 0, 0.1);
-  --headline-color: #320303;
+  --headline-color: #af167a;
   box-sizing: border-box;
 }
 
@@ -15,14 +17,16 @@ body {
   max-width: 680px;
   margin: 1.5rem auto;
   padding: 0 1rem;
-  font-family: "Sentient-Regular";
+  font-family: "Pally-Regular";
+  font-size: 1.2rem;
 }
 
 h1,
 h2,
 h3 {
   margin: 1rem;
-  font-family: "Switzer-Semibold";
+  font-family: "DancingScript-Variable";
+  font-weight: 700;
   color: var(--headline-color);
 }
 
@@ -37,7 +41,7 @@ hr {
 }
 
 p b {
-  font-family: "Sentient-Bold";
+  font-family: "Pally-Medium";
 }
 
 ul {
@@ -46,11 +50,11 @@ ul {
   padding-inline-start: 0px;
 }
 ul b {
-  font-family: "Sentient-Bold";
+  font-family: "Pally-Medium";
 }
 
 .guest-subgroup h3 {
-  font-family: "Switzer-Medium";
+  font-family: "Pally-Medium";
   font-size: 1.125rem;
   margin-bottom: 0;
 }
@@ -87,14 +91,20 @@ p {
   align-items: center;
   gap: 0.5rem;
   border-radius: 2rem;
-  border: 1px solid var(--body-text-color);
+  border: 1px solid var(--subtle);
 }
 
-#lea-bottom {
+#left-funny-image {
   position: fixed;
   left: 0px;
   bottom: 0px;
-  width: 180px;
+  width: 150px;
+}
+#right-funny-image {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 150px;
 }
 
 #map {
