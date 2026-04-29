@@ -94,17 +94,18 @@ p {
   border: 1px solid var(--subtle);
 }
 
-#left-funny-image {
+.funny-image {
   position: fixed;
-  left: 0px;
   bottom: 0px;
   width: 150px;
 }
-#right-funny-image {
-  position: fixed;
+
+#left {
+  left: 0px;
+}
+
+#right {
   right: 0px;
-  bottom: 0px;
-  width: 150px;
 }
 
 #map {
@@ -120,5 +121,9 @@ p {
   }
   iframe {
     width: 100% !important;
+  }
+
+  .funny-image {
+    width: 110px;
   }
 }
